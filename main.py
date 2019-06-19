@@ -1,4 +1,4 @@
-from main import BrowserCore, VkActions
+from seleniumFuncs import VkActions, BrowserCore
 from selenium.common.exceptions import NoSuchElementException
 import random
 import time
@@ -7,11 +7,7 @@ import datetime
 
 VK_LOGIN = ""
 VK_PASSWORD = ""
-
-
-VK_PASSWORD = ""
 USER_AGENT = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36"
-
 
 SOCPUBLIC_PAGE = "https://socpublic.com/"
 SOCPUBLIC_XPATH_LOGIN_BUTTON = "/html/body/div[1]/div/div[2]/ul/li[8]/a"
@@ -151,7 +147,7 @@ def sleep(log=None):
 
 
 def main():
-    browser = SocpublicController("--headless",
+    browser = SocpublicController(#"--headless",
                                   "--mute-audio",
                                   "--user-agent={0}".format(USER_AGENT))
 
