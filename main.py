@@ -7,9 +7,9 @@ import additionalFunctions
 import traceback
 import sys
 
-VK_LOGIN = "+375298616510"
-VK_PASSWORD = "qwerty_LUNXX"
-USER_AGENT = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36"
+VK_LOGIN = ""
+VK_PASSWORD = ""
+USER_AGENT = ""
 
 
 class Log:
